@@ -99,16 +99,93 @@ header span {
 .navegacao li.atual a{
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
-}
-
-h1 {
-    margin-left: 15px;
-}
-
+    }
+    
 .navegacao a:hover {
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
 }
+
+/************ main *************/
+
+main {
+    padding: 0 15px 20px;
+}
+
+main section {
+    background-color: var(--cor-clara);
+    border: 1px solid var(--cor-borda);
+    margin-bottom: 20px;
+}
+
+main h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+}
+
+.sobre p {
+    padding: 0 15px;
+}
+
+.foto img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+}
+
+/************ cursos *************/
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+
+.filtros button {
+    flex: 1;
+    min-height: 44px;
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filtros button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-clara);
+}
+
+#lista-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.cartao-curso {
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: var(--cor-borda);
+    color: var(--cor-texto);
+}
+
+.cartao-curso.concluido {
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+}
+
+.cursos p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 
 /************ footer *************/
 

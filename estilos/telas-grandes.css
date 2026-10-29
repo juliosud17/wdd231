@@ -24,5 +24,17 @@
     .navegacao a{
         border: none;
     }
+
+        main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    main h1,
+    .cursos {
+        grid-column: 1 / -1;
+    }
+
 }
 

@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+        name="description"
+        content="WDD 231 – Desenvolvimento Frontend para Web I."
+    >
+    <meta name="author" content="Júlio César Moreira Antunes">
   <title>WDD 231 | Julio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
@@ -11,12 +16,15 @@
   <link rel="stylesheet" href="estilos/telas-pequenas.css">
   <link rel="stylesheet" href="estilos/telas-grandes.css">
   <script defer src="scripts/navegacao.js"></script>
+  <script defer src="scripts/data.js"></script>
+  <script defer src="scripts/curso.js"></script>
+
 
 </head>
 <body>
   
   <header>
-    <img src="imagens/logo.svg" width="1" height="1" alt="Logo do site">
+    <img src="imagens/logo.svg" width="24" height="24" alt="Logo do site">
     <span>Júlio César Moreira Antunes</span>
     <button id="botao-de-nav" class="hamburger" aria-label="Navegação"></button>
   </header>
@@ -26,11 +34,37 @@
       <li class="atual"><a href="index.html">Página Inicial</a></li>
       <li><a href="#">Projeto da Câmara</a></li>
       <li><a href="#">Projeto Final</a></li>
-    </ul >
+    </ul>
   </nav>
 
   <main>
     <h1>Página Inicial</h1>
+    
+    <section class="sobre">
+      <h2>Sobre mim</h2>
+      <p>Meu nome é Júlio e sou estudante de Engenharia de Software. Tenho interesse em tecnologia, programação e desenvolvimento de projetos que possam resolver problemas do dia a dia. Atualmente estou ampliando meus conhecimentos em desenvolvimento web, aprendendo a criar páginas mais organizadas, responsivas e interativas. Gosto principalmente de aprender colocando os conceitos em prática e vendo o projeto evoluir aos poucos.
+      Sou uma pessoa dedicada, curiosa e sempre em busca de novos desafios. Acredito que a tecnologia pode transformar vidas e estou animado para contribuir com soluções inovadoras.</p>
+    </section>
+
+    <section class="foto">
+      <h2>Foto</h2>
+      <img src="imagens/foto-julio.webp" width="300" height="300" alt="Foto de Júlio César Moreira Antunes">
+    </section>
+
+    <section class="cursos">
+      <h2>Cursos de Certificação Web</h2>
+      <div class="filtros">
+        <button id="todos">Todos</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
+      <div id="lista-cursos">
+        <!-- Os cursos serão inseridos aqui pelo JavaScript -->
+      </div>
+      <p>O total de créditos dos cursos acima é <span id="total-creditos">0</span></p>
+    </section>
+
+
 
   </main>
   <footer>
@@ -44,7 +78,7 @@
       <a href="https://www.linkedin.com/in/julio-césar-moreira-antunes-0a8b6b20a/" target="_blank" rel="noopener noreferrer">
         <img src="imagens/linkedin.svg" width="16" height="16" alt="LinkedIn">
       </a>
-      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.youtube.com/@JulioCesar-jn2ue" target="_blank" rel="noopener noreferrer">
         <img src="imagens/youtube.svg" width="16" height="16" alt="YouTube">
       </a>
     </div>
