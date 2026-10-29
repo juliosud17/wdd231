@@ -4,9 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 231 | Julio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+  <script defer src="scripts/navegacao.js"></script>
+
 </head>
 <body>
-  <h1>WDD 231</h1>
-  <p>Página inicial em construção.</p>
+  
+  <header>
+    <img src="imagens/logo.svg" width="1" height="1" alt="Logo do site">
+    <span>Júlio César Moreira Antunes</span>
+    <button id="botao-de-nav" class="hamburger" aria-label="Navegação"></button>
+  </header>
+
+  <nav id="barra-navegacao" class="navegacao">
+    <ul>
+      <li class="atual"><a href="index.html">Página Inicial</a></li>
+      <li><a href="#">Projeto da Câmara</a></li>
+      <li><a href="#">Projeto Final</a></li>
+    </ul >
+  </nav>
+
+  <main>
+    <h1>Página Inicial</h1>
+
+  </main>
+  <footer>
+    <div class="social">
+      <a href="https://github.com/juliosud17" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/github.svg" width="16" height="16" alt="GitHub">
+      </a>
+      <a href="https://www.instagram.com/juliocesarantunes/" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/instagram.svg" width="16" height="16" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/julio-césar-moreira-antunes-0a8b6b20a/" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/linkedin.svg" width="16" height="16" alt="LinkedIn">
+      </a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/youtube.svg" width="16" height="16" alt="YouTube">
+      </a>
+    </div>
+
+    <p>&copy; <span id="anoatual"></span> Júlio César Moreira Antunes — São Paulo/Brasil</p>
+    <p id="ultimaModificacao">Última Modificação: <span id="dataModificacao"></span></p>
+  </footer>
+
 </body>
 </html>
