@@ -1,0 +1,33 @@
+#cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+section {
+    border: 2px solid #ffffff;
+    padding: 8px;
+    background-color: #B9B9CC;
+    text-align: center;
+    border-radius: 6px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1d3557;
+}
+
+header, footer {
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+h1, footer {
+    padding: 8px
+}
