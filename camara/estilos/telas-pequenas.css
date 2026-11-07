@@ -4,6 +4,7 @@
     --cor-fundo: #fdfaf3;
     --cor-texto: #1f2933;
     --cor-clara: #ffffff;
+    --cor-secundaria-clara: #f6e7bf;
 
     --fonte-titulos: 'Raleway', sans-serif;
     --fonte-texto: 'Lato', sans-serif;
@@ -140,4 +141,84 @@ footer {
 .social img {
     width: 40px;
     height: 40px;
+}
+
+/*** diretório ***/ 
+
+main {
+    padding: 1rem;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+#cartoes section {
+    overflow-wrap: anywhere;
+}
+
+.grade section {
+    background-color: #ffffff;
+    border: 2px solid #b8b8b8;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.grade img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.grade h2 {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+
+}
+
+.grade h2 + p {
+    font-size: 0.8rem;
+}
+
+#cartoes a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.lista img{
+    display: none;
+}
+
+.lista section {
+    padding: 20px 0;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lista section:nth-child(even) {
+    background-color: var(--cor-secundaria-clara); 
+    border-radius: 4px; 
+}
+
+.lista h2 {
+    font-size: 1rem;
+    margin-bottom: 5px
+}
+
+.lista section > p:first-of-type {
+    display: none;
+}
+
+.visualizacao button {
+    min-height: 44px;
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-clara);
+    margin-bottom: 10px;
+
+
+
 }

@@ -1,0 +1,92 @@
+{
+    "empresas": [
+        {
+            "nome":"Fortec Praia Grande",
+            "endereco":"Rua Indaiá, 119 - Guilhermina, Praia Grande - SP",
+            "telefone":"(13) 3593-1600",
+            "site":"https://fortecpraiagrande.com.br/",
+            "imagem":"fortec-praia-grande.webp",
+            "nivel":3,
+            "slogan":"Educação que acompanha cada geração",
+            "email":"faleconosco@fortecpraiagrande.com.br",
+            "ramo":"Educação"
+        },
+        {
+            "nome":"Colégio AEON Praia Grande",
+            "endereco":"Rua Bartolomeu Dias, 205 - Aviação, Praia Grande - SP",
+            "telefone":"(13) 3061-9381",
+            "site":"https://praiagrande.colegioaeon.com.br/",
+            "imagem":"colegio-aeon.webp",
+            "nivel":2,
+            "slogan":"Aprendizado para construir o futuro",
+            "email":"faleconosco@colegioaeon.com.br",
+            "ramo":"Educação"
+        },
+        {
+            "nome":"Hotel Rota do Sol",
+            "endereco":"Rua Uruguai, 70 - Guilhermina, Praia Grande - SP",
+            "telefone":"(13) 3491-6440",
+            "site":"https://hotelrotadosol.com.br/",
+            "imagem":"hotel-rota-do-sol.webp",
+            "nivel":3,
+            "slogan":"Sua estadia pertinho do mar",
+            "email":"reservas@hotelrotadosol.com.br",
+            "ramo":"Hotelaria"
+        },
+        {
+            "nome":"Hotel Araguaia",
+            "endereco":"Rua Bartolomeu Dias, 31 - Aviação, Praia Grande - SP",
+            "telefone":"(13) 3034-4055",
+            "site":"https://www.araguaiapg.com.br/",
+            "imagem":"hotel-araguaia.webp",
+            "nivel":2,
+            "slogan":"Conforto para seus dias no litoral",
+            "email":"araguaiahotel.adm@gmail.com",
+            "ramo":"Hotelaria"
+        },
+        {
+            "nome":"Tri Hotel Praia Grande",
+            "endereco":"Rua Paulo Cokely, 60 - Solemar, Praia Grande - SP",
+            "telefone":"(13) 99785-2814",
+            "site":"https://book.omnibees.com/chain/4156/contacts?currencyId=16&lang=pt-BR&q=20532",
+            "imagem":"tri-hotel-praia-grande.webp",
+            "nivel":2,
+            "slogan":"Hospitalidade para aproveitar Praia Grande",
+            "email":"reservas.praiagrande@trihoteis.com",
+            "ramo":"Hotelaria"
+        },
+        {
+            "nome":"AmorSaúde Praia Grande",
+            "endereco":"Rua Timbiras, 587 - Tupi, Praia Grande - SP",
+            "telefone":"(13) 3496-0000",
+            "site":"https://www.amorsaude.com.br/",
+            "imagem":"amorsaude-praia-grande.webp",
+            "nivel":3,
+            "slogan":"Cuidado acessível para sua saúde",
+            "email":"praiagrande.sp@amorsaude.com",
+            "ramo":"Saúde"
+        },
+         {
+            "nome": "Capellini Restaurante & Pizzaria",
+            "endereco": "Av. Presidente Kennedy, 9925 - Praia Grande, SP",
+            "telefone": "(13) 3495-8588",
+            "site": "https://capellinipizzaria.com.br/",
+            "imagem": "capellini-restaurante-pizzaria.webp",
+            "nivel": 1,
+            "slogan": "Sabor e tradição em cada refeição",
+            "email": "capellinipizzaria@gmail.com",
+            "ramo": "Alimentação"
+        },
+        {
+            "nome": "Pamer Padaria e Confeitaria",
+            "endereco": "Rua Fumio Miyazi, 1001 - Guilhermina, Praia Grande, SP",
+            "telefone": "(13) 3591-3539",
+            "site": "https://pamer.com.br/",
+            "imagem": "pamer-padaria-confeitaria.webp",
+            "nivel": 1,
+            "slogan": "Frescor e sabor para todos os momentos",
+            "email": "pamerpadaria@gmail.com",
+            "ramo": "Alimentação"
+        }
+    ]
+}
