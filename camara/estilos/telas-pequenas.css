@@ -1,0 +1,143 @@
+:root {
+    --cor-primaria: #0e5f76;
+    --cor-secundaria: #e9c46a;
+    --cor-fundo: #fdfaf3;
+    --cor-texto: #1f2933;
+    --cor-clara: #ffffff;
+
+    --fonte-titulos: 'Raleway', sans-serif;
+    --fonte-texto: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulos);
+}
+
+/************ cabeçalho *************/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 5px 5px 10px;
+    background-color: var(--cor-clara);
+    border-bottom: 3px solid var(--cor-secundaria);
+    column-gap: 10px;
+    align-items: end;
+}
+header .navegacao {
+    grid-column: 1/-1;
+}
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.6rem;
+    font-family: var(--fonte-titulos);
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.nome-camara span {
+    display: block;
+}
+
+.nome-camara span:last-child {
+    font-size:0.8rem;
+}
+.hamburger {
+   background: none;
+   border: none;
+   color: var(--cor-primaria);
+   cursor: pointer;
+   width: 44px;
+   height: 44px;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.exibir::after {
+    content:"\00D7";
+}
+
+/************ navegação *************/
+
+.navegacao {
+    display: none;
+}
+
+.navegacao.exibir {
+    display: block;
+}
+
+.navegacao ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacao a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.navegacao li.atual a{
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+}
+    
+.navegacao a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+    }
+
+/************ rodapé *************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--cor-secundaria);
+    font-size: 0.9rem;
+}
+
+/* títulos dos blocos: maiores e em negrito */
+.dados > span,
+.modificacao > p:first-child {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* todas as linhas dos dois blocos com o mesmo espaçamento */
+.dados span,
+.modificacao p {
+    display: block;
+    margin: 0 0 0.5rem;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
