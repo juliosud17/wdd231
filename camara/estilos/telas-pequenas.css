@@ -222,3 +222,123 @@ main {
 
 
 }
+
+/*** página inicial ***/
+
+.destaque-principal {
+    position: relative;
+}
+
+.destaque-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* caixa translúcida no centro da imagem */
+.cta-conteiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    padding: 0.75rem;
+    text-align: center;
+    background-color: rgba(14, 95, 118, 0.85);
+    border-radius: 6px;
+}
+
+.cta-conteiner p {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-clara);
+}
+
+.cta-button {
+    display: inline-block;
+    min-height: 44px;
+    padding: 0.75rem 1.5rem;
+    box-sizing: border-box;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.cta-button:hover {
+    background-color: var(--cor-clara);
+}
+
+.eventos,
+.clima,
+.membros-destaque {
+    background-color: var(--cor-clara);
+    border: 2px solid #b8b8b8;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.inicio h2 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+    font-size: 1.3rem;
+}
+
+.eventos li {
+    margin-bottom: 0.75rem;
+}
+
+#tempo-atual {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#tempo-atual figure {
+    margin: 0;
+    text-align: center;
+}
+
+#temperatura {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#previsao-tempo p {
+    margin: 0.25rem 0;
+    text-transform: capitalize;
+}
+
+#destaques {
+    display: grid;
+    gap: 1rem;
+}
+
+#destaques section {
+    border: 1px solid #b8b8b8;
+    border-radius: 6px;
+    padding: 8px;
+    overflow-wrap: anywhere;
+}
+
+#destaques img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+}
+
+#destaques h3 {
+    color: var(--cor-primaria);
+    font-size: 1.1rem;
+}
+
+#destaques a {
+    color: var(--cor-primaria);
+}

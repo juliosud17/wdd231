@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Câmara de Comércio de Praia Grande, eventos, clima atual e associados.">
+  <meta name="author" content="Júlio César Moreira Antunes">
+  <title>Câmara de Comércio de Praia Grande</title>
+  <link rel="icon" href="imagens/favicon.ico">
+
+  <meta property="og:title" content="Câmara de Comércio de Praia Grande">
+  <meta property="og:description" content="Câmara de Comércio de Praia Grande, eventos, clima atual e associados.">
+  <meta property="og:image" content="https://juliosud17.github.io/wdd231/camara/imagens/og-camara.jpg">
+  <meta property="og:url" content="https://juliosud17.github.io/wdd231/camara/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+  <script defer src="scripts/navegacao.js"></script>
+  <script defer src="scripts/data.js"></script>
+  <script defer src="scripts/clima.js"></script>
+  <script defer src="scripts/destaques.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <img src="imagens/logo.svg" width="24" height="24" alt="Logo do site">
+    <div class="nome-camara">
+      <span>Praia Grande</span>
+      <span>Câmara de Comércio</span>
+    </div>
+    <button id="botao-de-nav" class="hamburger" aria-label="Navegação"></button>
+
+    <nav id="barra-navegacao" class="navegacao">
+
+    <ul>
+      <li class="atual"><a href="index.html">Página Inicial</a></li>
+      <li><a href="diretorio.html">Diretório</a></li>
+      <li><a href="associe-se.html">Associe-se</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+
+  </nav>
+
+  </header>
+
+    
+  <main class="inicio">
+    <h1>Bem-vindo à página da Câmara de Comércio de Praia Grande.</h1>
+    <section class="destaque-principal">
+      <img src="imagens/praia-grande.webp" width="1200" height="675" alt="foto da cidade de Praia Grande, vista de cima da orla da praia.">
+      <div class="cta-conteiner">
+        <p>Apoie o Comércio Local</p>
+        <a href="associe-se.html" class="cta-button">Associe-se Agora</a>
+      </div>
+    </section>
+
+    <section class="eventos">
+      <h2>Eventos Atuais</h2>
+        <ul>
+          <li>Caravana de Natal da Coca-Cola - <strong>Data:</strong> 24 de novembro de 2026 - <strong>Local:</strong> Desfile iluminado pelas ruas da cidade (acompanhe o trajeto oficial pelas redes da prefeitura)</li>
+          <li>Festejos de Iemanjá - <strong>Datas:</strong> 5 e 6 de dezembro de 2026 - <strong>Local:</strong> Orla da Praia da Guilhermina</li>
+          <li>Feira de Artesanato Itinerante - <strong>Data:</strong> 7 de dezembro de 2026- <strong>Local:</strong> Forte, Praça Duque de Caxias.</li>
+        </ul>
+    </section>
+    <section class="clima">
+      <h2>Clima Atual e Previsões - Praia Grande</h2>
+        <div id="tempo-atual">
+          <span id="temperatura"></span>
+          <figure>
+            <img id="icone-do-clima" src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <h3>Previsão para os próximos dias</h3>
+        <div id="previsao-tempo">
+
+        </div>
+
+    </section>
+    <section class="membros-destaque">
+      <h2>Membros em Destaque</h2>
+      <div id="destaques"></div>
+      
+    </section>
+
+  </main>
+
+  <footer>
+    
+    <div class="dados">
+      <span>Câmara de Comércio de Praia Grande</span>
+      <div>
+        <span>Endereço: Praça Vereador Vital Muniz,  nº 1, Boqueirão</span>
+        <span>Praia Grande, São Paulo, 11701-050</span>
+        <span>Email: projetocamara@teste.com</span>
+        <span>Tel: 13 0000-0000</span>
+      </div>
+    </div>
+
+    <div class="social">
+      <a href="https://github.com/juliosud17" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/github.svg" width="40" height="40" alt="GitHub de Júlio César">
+      </a>
+      <a href="https://www.instagram.com/juliocesarantunes/" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/instagram.svg" width="40" height="40" alt="Instagram de Júlio César">
+      </a>
+      <a href="https://www.linkedin.com/in/julio-césar-moreira-antunes-0a8b6b20a/" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/linkedin.svg" width="40" height="40" alt="LinkedIn de Júlio César">
+      </a>
+    </div>
+
+    <div class="modificacao">
+      <p>Projeto de Aula WDD231</p>
+      <p>Júlio César Moreira Antunes</p>
+      <p>&copy; <span id="anoatual"></span> Câmara de Comércio de Praia Grande</p>
+    <p id="ultimaModificacao">Última Modificação: <span id="dataModificacao"></span></p>
+
+    </div>
+  </footer>
+</body>
+</html>

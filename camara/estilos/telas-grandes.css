@@ -42,5 +42,34 @@
         justify-content: space-between;
         align-items: center;
     }
-}
 
+    /*** página inicial: 2 colunas ***/
+
+    .inicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .inicio h1,
+    .destaque-principal,
+    .membros-destaque {
+        grid-column: 1 / -1;
+    }
+
+    .inicio > section {
+        margin-top: 0;
+    }
+
+    #destaques {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-conteiner p {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1.3rem;
+    }
+}
