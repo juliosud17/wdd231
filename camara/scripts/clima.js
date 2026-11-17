@@ -1,5 +1,6 @@
 const tempAtual = document.querySelector('#temperatura');
-const iconeDoClima = document.querySelector('#icone-do-clima');
+const figuraClima = document.querySelector('#tempo-atual figure');
+const iconeDoClima = document.createElement('img');
 const descrDaLegenda = document.querySelector('#tempo-atual figcaption');
 const previsao = document.querySelector('#previsao-tempo');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-24.00&lon=-46.44&units=metric&appid=6fac6d12172dc43dacac2952d5f12c73&lang=pt_br'; 
@@ -25,6 +26,9 @@ function mostrarResultados(dados) {
   let descr = dados.weather[0].description;
   iconeDoClima.setAttribute('src', iconesrc);
   iconeDoClima.setAttribute('alt', descr);
+  iconeDoClima.setAttribute('width', '50');
+  iconeDoClima.setAttribute('height', '50');
+  figuraClima.prepend(iconeDoClima);
   descrDaLegenda.textContent = descr;
 }
 
