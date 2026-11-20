@@ -72,4 +72,21 @@
     .cta-button {
         font-size: 1.3rem;
     }
+
+    /*** associe-se: formulário à esquerda, cartões à direita ***/
+
+    .associacao {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .associacao h1 {
+        grid-column: 1 / -1;
+    }
+
+    .niveis h2 {
+        margin-top: 0;
+    }
 }
