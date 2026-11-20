@@ -236,17 +236,12 @@ main {
     border-radius: 6px;
 }
 
-/* caixa translúcida no centro da imagem */
+/* no celular a caixa fica abaixo da imagem, para não escondê-la */
 .cta-conteiner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 400px;
+    margin-top: 0.75rem;
     padding: 0.75rem;
     text-align: center;
-    background-color: rgba(14, 95, 118, 0.85);
+    background-color: var(--cor-primaria);
     color: var(--cor-clara);
     border-radius: 6px;
 }

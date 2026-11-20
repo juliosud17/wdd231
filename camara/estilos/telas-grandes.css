@@ -65,6 +65,18 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* em telas grandes a caixa volta a ficar sobre a imagem */
+    .cta-conteiner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 400px;
+        margin-top: 0;
+        background-color: rgba(14, 95, 118, 0.85);
+    }
+
     .cta-conteiner p {
         font-size: 2rem;
     }
