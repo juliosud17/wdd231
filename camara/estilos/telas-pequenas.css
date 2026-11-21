@@ -236,17 +236,20 @@ main {
     border-radius: 6px;
 }
 
-/* no celular a caixa fica abaixo da imagem, para não escondê-la */
+/* no celular só o botão fica sobre a imagem, sem caixa e sem texto */
 .cta-conteiner {
-    margin-top: 0.75rem;
-    padding: 0.75rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    background-color: var(--cor-primaria);
     color: var(--cor-clara);
     border-radius: 6px;
 }
 
+/* o texto só aparece em telas grandes */
 .cta-conteiner p {
+    display: none;
     margin: 0 0 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
@@ -255,6 +258,8 @@ main {
 
 .cta-button {
     display: inline-block;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
     min-height: 44px;
     padding: 0.75rem 1.5rem;
     box-sizing: border-box;
